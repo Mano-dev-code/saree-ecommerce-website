@@ -262,7 +262,30 @@ color: orange;
 color: orange;
 opacity: 1;
 transition: 0.3s ease-in-out;
+
 }
 .filter-nav:active{
-color: blue;
+color: black;
 }
+.sort{
+  position: absolute;
+  top: 93.9%;
+  right: 38rem;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  height: 150px;
+  width:15%;
+  border: 1px solid rgb(0, 0, 0);
+  font-size: medium;
+  display: none;
+  }
+  .drop{
+    color: rgb(1, 1, 19);
+    font-weight: 500;
+  }
+  .sort-drop:hover.sort{
+display:block;
+  }

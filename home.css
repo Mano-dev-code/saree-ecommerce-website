@@ -3,12 +3,23 @@ poppins-regular {
   font-weight: 400;
   font-style: normal;
 }
-
+html{
+  scroll-behavior: smooth;
+}
+#contact{
+  scroll-margin-top: 80px; /* adjust based on navbar height */
+}
 .cedarville-cursive-regular {
   font-family: "Cedarville Cursive", cursive;
   font-weight: 100;
   font-style: normal;
 }
+.uncial-antiqua-regular {
+  font-family: "Uncial Antiqua", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 body {
   overflow-x: hidden;
@@ -408,25 +419,18 @@ box-shadow: 2px 2px 15px burlywood;
   overflow:hidden;
   cursor: pointer;
   animation: ocassionl  0.9s ease forwards;
-  transition: transform 0.7s ease, opacity 0.2s ease;
+  transition: 0.7s ease, opacity 0.2s ease;
+  box-shadow: 2px 2px 15px #8C3B1F;
 
 }
  
 
-@keyframes ocassionl{
-  from{
-    opacity: 0;
-    transform: scale(0);
-  }
-  to{
-    opacity: 1;
-    transform:scale(1.1) ;
-  }
-}
+
+
 .Ocassional-wears:hover {
-  opacity: 0.2;
+  opacity: 0.7;
+  transform: scale(1.05);
   border: 1px solid #8C3B1F;
-  box-shadow: 2px 2px 15px #8C3B1F;
 
 
 }
@@ -696,7 +700,7 @@ margin-top: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-image: url(images/footer.jpg);
+  background-image: url(assets/images/footer.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   gap: 50px;
@@ -818,44 +822,60 @@ margin-top: 20px;
   transition: 0.5s;
 }
 
-.shopBanner-Container {
+.about-Container {
   display: flex;
-  min-height: 650px;
-  background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
   justify-content: space-around;
   align-items: center;
   width: 100%;
-
+  height: 550px;
+  gap: 5rem;
+  border: 1px solid red;
+  background-image: url(assets/images/about-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 5%;
+  color: #EDE8D0;
 }
-
-.shop-words {
-
-  padding-top: 90px;
-  font-weight: 300;
-  font-size: x-large;
-  font-family: "Poppins", sans-serif;
-  color: #8C3B1F;
-  background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
-  font-style: normal;
-  line-height: 50px;
-  letter-spacing: 0.2px;
+.about-img{
+  width: 110%;
+ border: 0.5px solid #c53b0d;
+  border-radius:12px 28px;
+  margin-left: 2rem; 
+  /* box-shadow: 0 0 10px #f5efd5;   */
 }
-
-.rose-banner {
-  height: 600px;
-  border-radius: 15px;
-  box-shadow: 1px 1px 10px rgb(68, 46, 64);
-
-  cursor: pointer;
+.Meena-saree-tittle{
+ font-weight: 600;
+ font-size: 3em;
+  font-family: "Uncial Antiqua", system-ui;
+  text-align: center;
+position: relative;
+bottom: 4rem;
+right: 3em;
+color: transparent;
+/* text-shadow:0 0 6px ; */
+background-color: transparent;
+background-clip: text ;
+-webkit-background-clip: text;
+background-image: url(assets/images/textbg.jpg);
+animation:textanim 30s linear infinite;
+background-repeat: repeat;
 }
-
-.shop-child {
-  height: 600px;
-  width: 700px;
-  display: flex;
-  justify-content: center;
-
-
+@keyframes textanim{
+  from{
+    background-position:0% center;
+  }
+  to{
+    background-position:200% center;
+  }
+}
+.about-section{
+  font-size: large;
+  font-weight: 500;
+  /* width: 100%; */
+  line-height: 170%;
+  position: relative;
+  bottom: 3em;
+ 
 }
 
 .foot-logo {

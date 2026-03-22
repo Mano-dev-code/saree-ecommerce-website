@@ -3,18 +3,23 @@ poppins-regular {
   font-weight: 400;
   font-style: normal;
 }
-html{
+
+html {
   scroll-behavior: smooth;
-  scroll-padding-top:  120px;
+  scroll-padding-top: 120px;
 }
-#contact{
-  scroll-margin-top: 80px; /* adjust based on navbar height */
+
+#contact {
+  scroll-margin-top: 80px;
+  /* adjust based on navbar height */
 }
+
 .cedarville-cursive-regular {
   font-family: "Cedarville Cursive", cursive;
   font-weight: 100;
   font-style: normal;
 }
+
 .uncial-antiqua-regular {
   font-family: "Uncial Antiqua", system-ui;
   font-weight: 400;
@@ -40,36 +45,39 @@ body {
   position: sticky;
   top: 0;
   z-index: 999;
-  animation: anime  0.5s ease forwards;
- 
+  animation: anime 0.5s ease forwards;
+
   /* border: 2px solid #F4EDE3; */
   box-shadow: 2px 2px 10px rgb(0, 0, 0);
 
 }
+
 @keyframes anime {
-  from{
+  from {
     opacity: 0;
     transform: translateY(-40px);
   }
-  to{
+
+  to {
     opacity: 1;
-transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
 .nav {
   font-weight: 500;
-font-size: large;
+  font-size: large;
   text-decoration: none;
   color: #F4EDE3;
- border-radius: 5px;
+  border-radius: 5px;
 
 }
 
 .nav:hover::before {
-   
+
   width: 100%;
 }
+
 a {
   text-decoration: none;
   position: relative;
@@ -105,19 +113,23 @@ a::after {
   0% {
     background-position: 200% 0;
   }
+
   100% {
     background-position: -200% 0;
   }
 }
 
-.search:hover,.bell:hover,.account:hover,.cart:hover{
+.search:hover,
+.bell:hover,
+.account:hover,
+.cart:hover {
   transform: scale(1.2);
   transition: 0.2s;
 }
 
 
 .acc-close {
- position: relative;
+  position: relative;
   left: 222px;
   bottom: 3px;
 
@@ -133,13 +145,12 @@ a::after {
 
 .login {
   margin-left: 50px;
-
   position: absolute;
   top: 140%;
   right: 0;
   display: none;
   height: 120px;
-  width:17%;
+  width: 17%;
   background-color: #ffffff;
   border: 1px solid rgb(62, 62, 64);
   border-radius: 10px;
@@ -174,7 +185,9 @@ a::after {
 
 }
 
-.sign-out:hover,.log:hover,.sign-in:hover{
+.sign-out:hover,
+.log:hover,
+.sign-in:hover {
   opacity: 0.9;
 }
 
@@ -191,15 +204,16 @@ a::after {
   font-weight: 600;
 
 }
+
 /* banner styling */
 .slider {
-  top:10px;
+  top: 10px;
   width: 90%;
   height: 400px;
   position: relative;
   overflow: hidden;
   margin: auto;
-    box-shadow: 0 6px 25px black;
+  box-shadow: 0 6px 25px black;
   cursor: pointer;
   z-index: 1;
 }
@@ -215,7 +229,7 @@ a::after {
   position: absolute;
   width: 100%;
   height: 100%;
-  object-fit:cover;
+  object-fit: cover;
   opacity: 0;
   transition: opacity 0.6s ease-in-out;
 }
@@ -228,7 +242,7 @@ a::after {
 /* Bullet container */
 .bullets {
   position: absolute;
-bottom: 1px;
+  bottom: 1px;
   left: 50%;
 
   transform: translateX(-50%);
@@ -249,7 +263,8 @@ bottom: 1px;
 
 /* Active bullet becomes flat + smooth */
 .bullet.active {
-  width: 22px;        /* flat shape */
+  width: 22px;
+  /* flat shape */
   border-radius: 20px;
   background: rgb(81, 0, 255);
   opacity: 0.9;
@@ -301,7 +316,7 @@ bottom: 1px;
 .product-list {
   margin-top: 20%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
+  grid-template-columns: repeat(3, 1fr);
   overflow-x: auto;
   overflow-y: hidden;
   gap: 0.2%;
@@ -312,23 +327,26 @@ bottom: 1px;
 
 
 .image:hover {
- transform: scale(1.05);
- opacity: 0.9;
+  transform: scale(1.05);
+  opacity: 0.9;
 }
+
 .product-card {
   overflow: hidden;
 }
-.product-card img{
-    width: 100%;
-max-height: 100vh;
 
-  aspect-ratio: 2/ 4;    
-  object-fit: cover;    
+.product-card img {
+  width: 100%;
+  max-height: 100vh;
+
+  aspect-ratio: 2/ 4;
+  object-fit: cover;
   display: block;
   transition: transform 0.3s ease;
-box-shadow: 2px 2px 15px burlywood;
+  box-shadow: 2px 2px 15px burlywood;
 
 }
+
 .view-all {
   display: block;
   margin-left: auto;
@@ -405,15 +423,15 @@ box-shadow: 2px 2px 15px burlywood;
 .Ocassional-wears {
   height: 250px;
   width: 250px;
-  border-radius:12px 30px;
-  overflow:hidden;
+  border-radius: 12px 30px;
+  overflow: hidden;
   cursor: pointer;
-  animation: ocassionl  0.9s ease forwards;
+  animation: ocassionl 0.9s ease forwards;
   transition: 0.7s ease, opacity 0.2s ease;
   box-shadow: 2px 2px 15px #8C3B1F;
 
 }
- 
+
 
 
 
@@ -456,7 +474,7 @@ box-shadow: 2px 2px 15px burlywood;
   width: 10%;
   border-radius: 1px;
   border: none;
-margin-top: 20px;
+  margin-top: 20px;
   background-color: #08042a;
   color: #ff6f00;
   font-weight: 600;
@@ -464,10 +482,11 @@ margin-top: 20px;
   box-shadow: 2px 2px 8px #040404;
 
 }
-.view-all2:hover{
-  transition:  0.8s ease-in-out;
- width: 15%;
-  letter-spacing: 5px;  
+
+.view-all2:hover {
+  transition: 0.8s ease-in-out;
+  width: 15%;
+  letter-spacing: 5px;
 }
 
 
@@ -827,46 +846,51 @@ margin-top: 20px;
   margin-top: 5%;
   color: #EDE8D0;
 }
-.about-img{
+
+.about-img {
   width: 110%;
- border: 0.5px solid #c53b0d;
-  border-radius:12px 28px;
-  margin-left: 2rem; 
+  border: 0.5px solid #c53b0d;
+  border-radius: 12px 28px;
+  margin-left: 2rem;
   /* box-shadow: 0 0 10px #f5efd5;   */
 }
-.Meena-saree-tittle{
- font-weight: 600;
- font-size: 3em;
+
+.Meena-saree-tittle {
+  font-weight: 600;
+  font-size: 3em;
   font-family: "Uncial Antiqua", system-ui;
   text-align: center;
-position: relative;
-bottom: 4rem;
-right: 3em;
-color: transparent;
-/* text-shadow:0 0 6px ; */
-background-color: transparent;
-background-clip: text ;
--webkit-background-clip: text;
-background-image: url(assets/images/textbg.jpg);
-animation:textanim 30s linear infinite;
-background-repeat: repeat;
+  position: relative;
+  bottom: 4rem;
+  right: 3em;
+  color: transparent;
+  /* text-shadow:0 0 6px ; */
+  background-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: url(assets/images/textbg.jpg);
+  animation: textanim 30s linear infinite;
+  background-repeat: repeat;
 }
-@keyframes textanim{
-  from{
-    background-position:0% center;
+
+@keyframes textanim {
+  from {
+    background-position: 0% center;
   }
-  to{
-    background-position:200% center;
+
+  to {
+    background-position: 200% center;
   }
 }
-.about-section{
+
+.about-section {
   font-size: large;
   font-weight: 500;
   /* width: 100%; */
   line-height: 170%;
   position: relative;
   bottom: 3em;
- 
+
 }
 
 .foot-logo {
@@ -902,7 +926,7 @@ background-repeat: repeat;
   color: #006aff;
 }
 
-.panel{
+.panel {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -910,3 +934,112 @@ background-repeat: repeat;
   top: 0;
   position: sticky;
 }
+
+
+.login-form {
+  background:#ffffff;
+  padding: 30px;
+  width: 300px;
+position: relative;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: rgb(75, 7, 7);
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.input-group {
+  margin-top: 15px;
+}
+
+.input-group input {
+  width: 100%;
+  min-height: 28px;
+  border: 1.6px solid rgb(72, 72, 74);
+  border-radius: 1em;
+  outline: none;
+  align-items: center;
+}
+
+.input-group input::placeholder {
+  padding-left: 8px;
+}
+
+.submit {
+  margin-left: 10%;
+  text-align: center;
+  width: 80%;
+  min-height: 40px;
+  margin-top: 10%;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  font-size: large;
+  font-weight: 400;
+  background-color: #006aff;
+  color: white;
+  font-weight: 600;
+  transition: 0.5s;
+  opacity: 0.8;
+
+}
+
+.submit:hover {
+  opacity: 1;
+
+}
+
+.extra {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.or {
+  margin: 20px;
+  text-align: center;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 999;
+}
+
+.login-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  display: none;
+  z-index: 1000;
+}
+#closeLogin{
+  margin-left: 95%;
+  font-size: 25px;
+  font-weight: 600;
+  cursor:pointer;
+}
+#closeLogin:hover{
+  transform: rotate(50deg);
+
+}
+.google{
+  position: relative;
+  top: 1px;
+}
+  .other-apps{
+    display:flex;
+    justify-content: center;
+    align-items:center ;
+    gap: 3%;
+  }

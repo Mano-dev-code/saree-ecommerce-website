@@ -1,0 +1,362 @@
+.uncial-antiqua-regular {
+  font-family: "Uncial Antiqua", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bitcount-prop-double-uniquifier {
+  font-family: "Bitcount Prop Double", system-ui;
+  font-optical-sizing: auto;
+  
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+}
+body{
+  background-color: #eeede98b;
+
+}
+
+.navigation-container {
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #8C3B1F;
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  animation: anime 0.5s ease forwards;
+
+  /* border: 2px solid #F4EDE3; */
+  box-shadow: 2px 2px 10px rgb(0, 0, 0);
+
+}
+
+@keyframes anime {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.nav {
+  font-weight: 500;
+  font-size: large;
+  text-decoration: none;
+  color: #F4EDE3;
+  border-radius: 5px;
+
+}
+
+a {
+  text-decoration: none;
+  position: relative;
+  transition: color 0.5s ease;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #ffffff, transparent);
+  background-size: 300% 100%;
+  opacity: 0;
+  transition: opacity 0.5s;
+  border-radius: 15px;
+}
+
+.nav:hover {
+  color: #c4c8cd;
+}
+
+.nav:hover::after {
+  opacity: 1;
+  animation: shimmer111 2s linear infinite !important;
+}
+
+@keyframes shimmer111 {
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.search:hover,.bell:hover,.account:hover,.product-save:hover {
+  transform: scale(1.2);
+  transition: 0.2s;
+}
+#search{
+  width: 130%;
+}
+
+.acc-close {
+  position: relative;
+  left: 222px;
+  bottom: 3px;
+
+}
+
+.acc-close:hover {
+  transform: rotate(70deg);
+  transition: 1s;
+
+}
+
+/* Account signin box  */
+
+.login {
+  margin-left: 50px;
+
+  position: absolute;
+  top: 140%;
+  right: 0;
+  display: none;
+  height: 120px;
+  width: 17%;
+  background-color: #ffffff;
+  border: 1px solid rgb(62, 62, 64);
+  border-radius: 10px;
+ z-index: 10000;
+
+
+}
+
+.sign-in {
+  position: relative;
+  right: 20px;
+  top: 20px;
+  height: 40px;
+  width: 100px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  color: white;
+  font-weight: 600;
+  background-color: #8C3B1F;
+
+}
+
+.sign-out {
+  position: relative;
+  border: 0.3px solid black;
+  background-image: linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%);
+  right: 10px;
+  top: 20px;
+  height: 40px;
+  width: 100px;
+  border-radius: 5px;
+  font-weight: 600;
+
+}
+
+.sign-out:hover,
+.log:hover,
+.sign-in:hover {
+  opacity: 0.9;
+}
+
+.log {
+  position: relative;
+  top: 30px;
+  right: 2px;
+  border-radius: 5px;
+  background-color: rgb(43, 228, 43);
+  border: none;
+  color: white;
+  height: 40px;
+  width: 190px;
+  font-weight: 600;
+
+}
+
+
+input {
+  min-height: 30px;
+  width: 15%;
+  border-radius: 16px;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+
+input:hover {
+  
+  box-shadow: 0 0 5px white;
+}
+
+
+.banner-container{
+  width: 100%;
+  height: 400px;
+    background-image: url(assets/images/whishlist-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+border-radius: 10px;
+margin-top: 1%;
+}
+
+
+
+#wishlist-container{
+  margin-top: 6%;
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+  border: 1px solid blue;
+}
+
+.wish-card {
+  position: relative;
+  max-width: 100%;
+  padding: 2%;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.wish-card img {
+  width: 100%;
+  height: 450px;
+  margin-top: 10px;
+  aspect-ratio: 2.7/ 4;
+  display: block;
+  border-radius: 16px;
+  border: 3px solid white;
+  transition: transform 0.4s ease;
+  /* box-shadow: 2px 2px 15px burlywood; */
+  
+}
+
+.product-details {
+  position:absolute;
+  bottom:-90%;
+  left:0;
+  width:90%;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content:start;
+  align-items: first baseline;
+  height: 150px;
+  background:#a2a29897;
+  backdrop-filter: blur(10px);
+  color:white;
+  padding:30px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px #033c10;
+  
+  transition: bottom 0.4s ease;
+  
+}
+
+.wishlist-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
+  height: 30px;
+  width: 30px;
+  text-align: center  ;
+  cursor: pointer;
+
+  border-radius: 50px;
+
+}
+.product-desc {
+  width: 90%;
+  color: #e1e1e1;
+  font-size: smaller;
+}
+
+.product-details b {
+  padding-top: 10px;
+
+}
+
+.heart {
+  fill: white;
+  transition: fill 0.3s ease;
+}
+ 
+.heart.active {
+  fill: red !important;
+}
+.product-details button {
+padding: 8px 16px;
+  min-height: 43px;
+  border: none;
+  font-family: "Bitcount Prop Double", system-ui;
+  color: #ffffff;
+  border-radius: 16px;
+  font-size: x-large;
+  background-color: #8C3B1F;
+  margin-right: 40px;
+}
+
+.product-details button:hover {
+  transform: scale(1.05)
+}
+
+.price-button {
+  display: flex;
+justify-content: space-between;
+align-items: center;
+  font-size: x-large;
+}
+
+.wish-card:hover img {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+.wish-card:hover .product-details{
+  bottom:35px;
+  display: block;
+  transition: bottom 0.4s ease;
+
+}
+.remove-wish{
+  position: relative;
+  bottom:28rem;
+  left: 1rem;
+  background-color: transparent;
+  border: none;
+  height: 40px;
+  width: 40px;
+  font-size: xx-large;
+  color: #ffffff;
+  background-color:rgba(0, 0, 0, 0.575);
+  text-shadow:0 0 10px #033c10;
+  border-radius:25px;
+
+}
+.ratings{
+position: relative;
+right: 6px;
+}
+.menu label{
+  display: block;
+}
+.ratings{
+  font-size:large;
+  font-weight: 600;
+  position: relative;
+  bottom: 10px;
+}
